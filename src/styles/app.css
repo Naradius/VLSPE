@@ -1,0 +1,152 @@
+/** ANALYZER **/
+.analyzerContent {
+    font-family: monospace;
+}
+
+.ui.input {
+    width: 100%;
+}
+
+.ui.selection.dropdown {
+    width: 100%;
+}
+
+.item {
+    /* z-index: 25; */
+}
+
+/** ELEMENTS **/
+.element {
+    background-color: white;
+    text-align: center;
+    z-index: 24;
+    cursor: pointer;
+    position: absolute;
+    color: black;
+    padding-top: 5px;
+    min-width: 140px;
+    height: auto;
+    min-height: 50px;
+    line-height: 12px;
+    -webkit-transition: -webkit-box-shadow 0.15s ease-in;
+    -moz-transition: -moz-box-shadow 0.15s ease-in;
+    -o-transition: -o-box-shadow 0.15s ease-in;
+    transition: box-shadow 0.15s ease-in;
+}
+
+.element:hover {
+    box-shadow: 1px 1px 10px #444;
+    -o-box-shadow: 1px 1px 10px #444;
+    -webkit-box-shadow: 1px 1px 10px #444;
+    -moz-box-shadow: 1px 1px 10px #fff;
+    opacity:0.9;
+}
+
+.element.selected {
+    box-shadow: 1px 1px 10px #444;
+    -o-box-shadow: 1px 1px 10px #444;
+    -webkit-box-shadow: 1px 1px 10px #444;
+    -moz-box-shadow: 1px 1px 10px #fff;
+    opacity:0.9;
+}
+
+.basicElement {    
+    border: 3px solid darkgreen;   
+}
+
+.alternativeElement {
+    border: 3px solid darkred;
+}
+
+.repetitionElement {
+    border: 3px solid orangered;
+}
+
+.patternEl {
+
+}
+
+.constraintEl {
+
+}
+
+.posConstraint {
+    border-radius: 0.5em;
+    border: 3px solid black;
+}
+
+.ruleConstraint {
+    border-radius: 0.5em;
+    border: 3px solid dodgerblue;
+}
+
+.tokenConstraint {
+    border-radius: 0.5em;
+    border: 3px solid darkred;
+}
+
+.orthConstraint {
+    border-radius: 0.5em;
+    border: 3px solid orange;
+}
+
+.morphConstraint {
+    border-radius: 0.5em;
+    border: 3px solid green;
+}
+
+.ruleEl {
+    background-color: #cd5c5c;
+    border-radius: 0.5em;
+    border: 2px solid #993535;
+}
+
+.hidden {
+    display: none;
+}
+
+#propertiesDiv {
+    margin-top: 10px;
+}
+
+.propBlock {
+    margin-bottom: 10px;
+}
+
+.ui.label>.close.icon, .ui.label>.delete.icon {
+    display: contents;
+}
+
+/** LINKS IN WINDOWS **/
+.drag-locked { border:1px solid red; }
+.cmdLink { font-size:0.80em;}
+
+/** DRAG/DROP CLASSES **/
+.dragActive { border:2px dotted orange; }
+.dropHover { border:1px dotted red; }
+
+/** INFO WINDOW **/
+#list {
+    text-align: center;
+    display: none;
+    font-size: 90%;
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+    top: 100px;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid #456;
+    opacity: 0.8;
+    border-radius: 8px;
+    color: #444;
+}
+#list table { width:100%;}
+#list table th, #list strong { color:black; font-size:12px; text-align: center; }
+
+path, .jtk-endpoint { cursor:pointer; }
+
+.propBlock {
+    width: 100%;
+}
